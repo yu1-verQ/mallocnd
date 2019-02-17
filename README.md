@@ -14,7 +14,7 @@ C言語で多次元配列を動的確保するための関数mallocndの作成�
 ### 具体例（3次元）
 ```
 int main ( void ) {
-  int ***a;
+  double ***a;
   int numIndex = 3;
   int index[ numIndex ];
   
@@ -22,6 +22,8 @@ int main ( void ) {
   index[0] = 2;
   index[0] = 2;
   
-  a = mallocnd(size_t sizeOfType, int numIndex, int *index )
+  a = mallocnd( sizeof( double ), numIndex, *index )
+  
+  return 0;
 }
 ```
