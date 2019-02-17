@@ -7,9 +7,21 @@ C言語で多次元配列を動的確保するための関数mallocndの作成�
 第2引数: 作成したい配列変数の次元数  
 第3引数: 作成したい配列変数の各次元の大きさを収めた配列
 
-### 具体例
-'''
+## mallocndの戻り値
+成功時: 配列の先頭ポインタ  
+失敗時: NULLポインタ
 
-mallocnd(size_t sizeOfType, int numIndex, int *index )
-
-'''
+### 具体例（3次元）
+```
+int main ( void ) {
+  int ***a;
+  int numIndex = 3;
+  int index[ numIndex ];
+  
+  index[0] = 3;
+  index[0] = 2;
+  index[0] = 2;
+  
+  a = mallocnd(size_t sizeOfType, int numIndex, int *index )
+}
+```
