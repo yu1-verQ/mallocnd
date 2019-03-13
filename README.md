@@ -19,8 +19,8 @@ int main ( void ) {
   int index[ numIndex ];
   
   index[0] = 3;
-  index[0] = 2;
-  index[0] = 2;
+  index[1] = 2;
+  index[2] = 2;
   
   a = mallocnd( sizeof( double ), numIndex, *index )
   
